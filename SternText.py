@@ -216,3 +216,13 @@ of a wavefunction
         self.play(Write(textofEXperiment_014))
         self.play(Write(textofEXperiment_015))
         self.wait()
+        
+        Experiment_02 = Text("3.2 Sequential Stern-Gerlach Experiment")
+        Experiment_02.to_corner(UL)
+        Experiment_021 = Text("(Collapsing of Wave Function)",
+                              font_size=30)
+        Experiment_021.next_to(Experiment_02, RIGHT, buff=0.3)
+        
+        self.play(Write(Experiment_02))
+        self.play(Write(Experiment_021))
+        self.wait()

@@ -1,4 +1,7 @@
 media/*
 env/*
-__pychace__/*
+__pycahce__/*
+env
+./env/
+./__pycache__
 

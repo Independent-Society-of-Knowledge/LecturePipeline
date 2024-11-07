@@ -1,7 +1,11 @@
 media/*
 env/*
+<<<<<<< HEAD
 __pycahce__/*
 env
 ./env/
 ./__pycache__
 
+=======
+__pycache__/*
+>>>>>>> 3-gitignore-file-is-missing

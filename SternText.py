@@ -286,7 +286,7 @@ of a wavefunction
         group_0123456.shift(0.1*LEFT)
         textofEXperiment_025 = Text("apparatus with probability:", font_size=30)
         textofEXperiment_025.next_to(group_0123456, DOWN, aligned_edge=LEFT)
-        mathtext_8 = MathTex("P(S_z ^+) = |\\langle\\psi_0|S_z ^+\\rangle|^2|\\langle S_z ^+|S_z ^+|^2 = \\frac{1}{2}}")
+        mathtext_8 = MathTex("P(S_z ^+) = |\\langle\\psi_0|S_z ^+\\rangle|^2|\\langle S_z ^+|S_z ^+\\rangle|^2 = \\frac{1}{2}}")
         mathtext_8.shift(0.5*DOWN)
         textofEXperiment_026 = Text("As we expected classically.", font_size=30)
         textofEXperiment_026.next_to(mathtext_8, DOWN)
@@ -384,7 +384,7 @@ of a wavefunction
         group_014.width = textofEXperiment_037.width
         textofEXperiment_040 = Text("probability as below:", font_size=30)
         textofEXperiment_040.next_to(group_014, DOWN, aligned_edge=LEFT)
-        mathtext_14 = MathTex("P(S_z ^+) = |\\langle\\psi_o|S_z ^+\\rangle|^2 |\\langle S_z ^+|S_z ^+\\rangle|^2 |\\rangle S_z ^+|S_z ^\\pm\\rangle| = \\frac{1}{8}")
+        mathtext_14 = MathTex("P(S_z ^+) = |\\langle\\psi_o|S_z ^+\\rangle|^2 |\\langle S_z ^+|S_z ^+\\rangle|^2 |\\langle S_z ^+|S_z ^\\pm\\rangle| = \\frac{1}{8}")
         mathtext_14.shift(2.5*DOWN)
         group_015 = VGroup(textofEXperiment_032, group_010,
                            group_013, textofEXperiment_037,

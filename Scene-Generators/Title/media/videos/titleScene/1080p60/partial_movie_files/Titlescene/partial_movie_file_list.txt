@@ -1,4 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/Lenovo/Documents/lib/Scene-Generators/Title/media/videos/titleScene/1080p60/partial_movie_files/Titlescene/3379946419_1509924137_1562991430.mp4'
-file 'file:C:/Users/Lenovo/Documents/lib/Scene-Generators/Title/media/videos/titleScene/1080p60/partial_movie_files/Titlescene/2178488854_1357252026_1874056106.mp4'
-file 'file:C:/Users/Lenovo/Documents/lib/Scene-Generators/Title/media/videos/titleScene/1080p60/partial_movie_files/Titlescene/2178488854_1704852926_1845429291.mp4'

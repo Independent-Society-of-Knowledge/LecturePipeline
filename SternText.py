@@ -145,7 +145,7 @@ of a wavefunction
         textofEXperiment_07 = Text("axis, this electron experiences a force:",
                                    font_size=30)
         textofEXperiment_07.next_to(Experiment_01, DOWN, aligned_edge=LEFT)
-        mathtext_2 = MathTex("F_{z} = \\frac{\\partial}{\\partial z} \left( \\vec{\\mu} \\cdot \\vec{B} \\right) \\approx \\mu_{z} \\frac{\\partial B_{z}}{\\partial z}")
+        mathtext_2 = MathTex("F_{z} = \\frac{\\partial}{\\partial z} \\left( \\vec{\\mu} \\cdot \\vec{B} \\right) \\approx \\mu_{z} \\frac{\\partial B_{z}}{\\partial z}")
         textofEXperiment_08  = Text("According to classical physics, the magnetic moment of an electron must be ",
                                     font_size=30)
         textofEXperiment_08.width = textofEXperiment_01.width

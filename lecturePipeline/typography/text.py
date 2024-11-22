@@ -1,8 +1,4 @@
 from manim import *
-import textwrap
-import re
-
-from lecturePipeline.design.colors import getColor
 from lecturePipeline.typography.fonts.typography import typography
 from lecturePipeline.utils.pixel_to_units import pixels_to_units
 

@@ -1,0 +1,2 @@
+
+from .lecture_configuration import LectureConfiguration

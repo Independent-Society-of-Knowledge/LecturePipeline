@@ -8,7 +8,7 @@ def typography(key: str, default: Any = None):
 
         :param file_path: Path to the YAML configuration file.
         """
-        file_path = "typography.yml"
+        file_path = "lecturePipeline/typography/fonts/typography.yml"
         try:
             with open(file_path, 'r') as file:
                 data = yaml.safe_load(file)

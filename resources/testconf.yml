@@ -1,0 +1,43 @@
+lecture:
+  metadata:
+    title: 'Advanced Machine Learning Techniques'
+    subtitle: 'Deep Dive into Neural Network Architectures'
+    author: "Dr. Elena Rodriguez"
+    supervisors:
+      - "Prof. John Smith"
+      - "Dr. Maria Garcia"
+    voice:
+      provider: "google-cloud"
+      voice-model: "neural2-standard"
+      language: "en-US"
+    video-generation:
+      engine: "manim"
+      resolution: "h"
+      ratio:
+        - 16
+        - 9
+      fps: 60
+      output-format: "mp4"
+    music:
+      intro-track: "classical_soft_intro.mp3"
+      background-volume: 0.2
+      transition-music: "academic_transition.mp3"
+
+    course-name: "Advanced Machine Learning"
+    lecture-number: 3
+    content-path: "./lectures/lecture_03_content.md"
+
+  scene-configurations:
+    title-scene:
+      background: "/home/kid-a/Pictures/boliviainteligente-GH6uTRKPK0Q-unsplash.jpg"
+      duration: 5
+      placement: "center"
+
+    section-scenes:
+      max-content-per-scene: 3
+      transition-effect: "slide"
+      code-display-style: "typewriter"
+
+    conclusion-scene:
+      summary-duration: 10
+      key-points-highlight: true

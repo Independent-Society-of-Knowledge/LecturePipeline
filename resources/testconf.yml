@@ -1,7 +1,7 @@
 lecture:
   metadata:
-    title: "Advance3d Machine Learning Techniques"
-    subtitle: "Deep Dive into Neural Network Architectures"
+    title: 'Advanced Machine Learning Techniques'
+    subtitle: 'Deep Dive into Neural Network Architectures'
     author: "Dr. Elena Rodriguez"
     supervisors:
       - "Prof. John Smith"
@@ -12,12 +12,10 @@ lecture:
       language: "en-US"
     video-generation:
       engine: "manim"
-      resolution:
-        - 1920
-        - 1080
+      resolution: "h"
       ratio:
-        - 1920
-        - 1080
+        - 16
+        - 9
       fps: 60
       output-format: "mp4"
     music:

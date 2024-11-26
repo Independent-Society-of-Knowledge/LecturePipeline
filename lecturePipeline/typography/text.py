@@ -9,7 +9,8 @@ def textHandler(
         type: str,
         config,
         width: float = None,
-        position = ORIGIN
+        position = ORIGIN,
+        alignment = LEFT
 ):
     """Main entry point for text handling. Processes text and manages line breaks if needed."""
     coefs = pixels_to_units(config)
@@ -17,11 +18,11 @@ def textHandler(
     font_size = typo['size']
 
     if width is None or calculate_text_width(input, font_size) < width:
-        return [Tex(input, font_size = font_size ).move_to(position, aligned_edge=LEFT)]
+        return [Tex(input, font_size = font_size ).move_to(position, aligned_edge=alignment)]
 
     else:
         lines = split_text_to_width(input, width, font_size)
-        return lineHandler(lines, type, config, font_size, position)
+        return lineHandler(lines, type, config, font_size, position, alignment)
 
 
 def lineHandler(
@@ -29,7 +30,8 @@ def lineHandler(
         type: str,
         config,
         font_size: float,
-        position
+        position = ORIGIN,
+        alignment = LEFT
 ):
     """Handles the spacing and arrangement of multiple lines."""
     coefs = pixels_to_units(config)
@@ -39,7 +41,7 @@ def lineHandler(
     # print(linespacing)
     # Create Tex objects for each line with consistent height scaling
     print(linespacing / coefs[1]**1.5)
-    return [Tex(line, font_size = font_size ).move_to(DOWN * i * linespacing / (coefs[1]) + position, aligned_edge=LEFT) for
+    return [Tex(line, font_size = font_size ).move_to(DOWN * i * linespacing / (coefs[1]) + position, aligned_edge=alignment) for
             i, line in enumerate(lines)]
 
 

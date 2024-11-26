@@ -1,29 +1,30 @@
 from manim import *
 
 from lecturePipeline.configuration.lecture_configuration import LectureConfiguration
+from lecturePipeline.scenes.title_scenes.center import center
+from lecturePipeline.scenes.title_scenes.left_compact import leftCompact
 from lecturePipeline.scenes.title_scenes.left_full import  leftFull
+from lecturePipeline.scenes.title_scenes.right_compact import rightCompact
 from lecturePipeline.scenes.title_scenes.right_full import rightFull
-from lecturePipeline.typography.text import textHandler
-from lecturePipeline.utils.percent_to_units import percent_to_units
-from lecturePipeline.utils.time_manager import time_manager
+
 
 
 class TitleScene(Scene):
     def __init__(self, configuration: LectureConfiguration = LectureConfiguration(
         "/home/kid-a/Documents/isk/LecturePipeline/resources/testconf.yml"),
-                 title: str = "Title",
-                 subtitle: str = "Subtitle",
-                 placement: str = "right-full",
+                 title: str = "Title of a lecture that is a long title indeed",
+                 subtitle: str = "Subtitle of a lecture that is a long subtitle indeed",
+                 placement: str = "right-compact",
                  duration: float = 4
                  ):
         super().__init__()
 
         # Setting Lecture Configurations
-        self.lectureConfig = configuration
-        config.frame_width = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[0]
-        config.frame_height = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[1]
-        self.camera.frame_width = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[0]
-        self.camera.frame_height = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[1]
+        self.configuration = configuration
+        config.frame_width = self.configuration.get("lecture.metadata.video-generation.ratio")[0]
+        config.frame_height = self.configuration.get("lecture.metadata.video-generation.ratio")[1]
+        self.camera.frame_width = self.configuration.get("lecture.metadata.video-generation.ratio")[0]
+        self.camera.frame_height = self.configuration.get("lecture.metadata.video-generation.ratio")[1]
 
         # Stacking Arguments for video production
         self.title = title
@@ -34,11 +35,17 @@ class TitleScene(Scene):
 
     def construct(self):
         if self.placement == "left-full":
-            scene = leftFull(configuration=self.lectureConfig, title=self.title, subtitle=self.subtitle,
+            scene = leftFull(configuration=self.configuration, title=self.title, subtitle=self.subtitle,
                                  duration=self.duration).construct(self)
         elif self.placement == "right-full":
-            scene =  rightFull(configuration=self.lectureConfig, title=self.title, subtitle=self.subtitle,
+            scene =  rightFull(configuration=self.configuration, title=self.title, subtitle=self.subtitle,
                                   duration=self.duration).construct(self)
-
+        elif self.placement == "center":
+            scene = center(configuration=self.configuration, title=self.title, subtitle=self.subtitle, duration=self.duration).construct(self)
+        elif self.placement == "right-compact":
+            scene =  rightCompact(configuration=self.configuration, title=self.title, subtitle=self.subtitle,
+                                  duration=self.duration).construct(self)
+        elif self.placement == "left-compact":
+            scene = leftCompact(configuration=self.configuration, title=self.title, subtitle=self.subtitle, duration=self.duration).construct(self)
         self.wait(4)
 

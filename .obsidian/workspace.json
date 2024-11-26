@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "documentation/colors.md",
+                "file": "documentation/typography.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "colors"
+              "title": "typography"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "documentation/colors.md",
+                "file": "documentation/typography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for colors"
+              "title": "Backlinks for typography"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "documentation/colors.md",
+                "file": "documentation/typography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from colors"
+              "title": "Outgoing links from typography"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "documentation/colors.md"
+                "file": "documentation/typography.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of colors"
+              "title": "Outline of typography"
             }
           }
         ]
@@ -164,8 +164,11 @@
   },
   "active": "b3571931c68e04d4",
   "lastOpenFiles": [
-    "documentation/configuration-of-lectures.md",
+    "lecturePipeline/typography/textTypographicFunctions.py~",
+    "lecturePipeline/typography/textTypographicFunctions.py",
     "documentation/colors.md",
+    "documentation/typography.md",
+    "documentation/configuration-of-lectures.md",
     "documentation/introduction.md",
     "documentation"
   ]

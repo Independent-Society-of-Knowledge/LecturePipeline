@@ -14,11 +14,11 @@ def rightFull(configuration: LectureConfiguration = LectureConfiguration(
 
         def setup(self):
             # Setting Lecture Configurations
-            self.lectureConfig = configuration
-            config.frame_width = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[0]
-            config.frame_height = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[1]
-            self.camera.frame_width = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[0]
-            self.camera.frame_height = self.lectureConfig.get("lecture.metadata.video-generation.ratio")[1]
+            self.configuration = configuration
+            config.frame_width = self.configuration.get("lecture.metadata.video-generation.ratio")[0]
+            config.frame_height = self.configuration.get("lecture.metadata.video-generation.ratio")[1]
+            self.camera.frame_width = self.configuration.get("lecture.metadata.video-generation.ratio")[0]
+            self.camera.frame_height = self.configuration.get("lecture.metadata.video-generation.ratio")[1]
 
             # Stacking Arguments for video production
             self.title = title
@@ -28,7 +28,7 @@ def rightFull(configuration: LectureConfiguration = LectureConfiguration(
 
         def construct(self):
             background = ImageMobject(
-                self.lectureConfig.get("lecture.scene-configurations.title-scene.background")).scale_to_fit_depth(1.0)
+                self.configuration.get("lecture.scene-configurations.title-scene.background")).scale_to_fit_depth(1.0)
 
             rectangle = Rectangle(width=percent_to_units(60, config), height=percent_to_units(100, config),
                                   fill_color=BLACK, fill_opacity=1, stroke_width=0).move_to(

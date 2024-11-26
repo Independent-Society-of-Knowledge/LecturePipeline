@@ -17,7 +17,7 @@ def textHandler(
     font_size = typo['size']
 
     if width is None or calculate_text_width(input, font_size) < width:
-        return [Tex(input, font_size= font_size)]
+        return [Tex(input, font_size = font_size ).move_to(position, aligned_edge=LEFT)]
 
     else:
         lines = split_text_to_width(input, width, font_size)

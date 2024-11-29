@@ -14,7 +14,7 @@ class TitleScene(Scene):
         "/home/kid-a/Documents/isk/LecturePipeline/resources/testconf.yml"),
                  title: str = "Title of a lecture that is a long title indeed",
                  subtitle: str = "Subtitle of a lecture that is a long subtitle indeed",
-                 placement: str = "right-compact",
+                 placement: str = "right-full",
                  duration: float = 4
                  ):
         super().__init__()

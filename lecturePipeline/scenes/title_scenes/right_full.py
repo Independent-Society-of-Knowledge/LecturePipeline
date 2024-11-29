@@ -40,12 +40,13 @@ def rightFull(configuration: LectureConfiguration = LectureConfiguration(
                 Rectangle(width=0, height=percent_to_units(100, config), stroke_width=0, fill_opacity=0).move_to(RIGHT * 8,
                                                                                                                  aligned_edge=RIGHT),
                 rectangle), background.animate.move_to(LEFT * 2), run_time=1)
-            textWidth = 120
+            titleTextWidth = 90
+            subtitleTextWidth = 200
             title = textHandler(
                 input=self.title,
                 type="fluid.display-03-mx",
                 config=config,
-                width=textWidth,
+                width=titleTextWidth,
                 position=LEFT * percent_to_units(5, config)  + UP * 1.8,
                 alignment=LEFT
             )
@@ -53,7 +54,7 @@ def rightFull(configuration: LectureConfiguration = LectureConfiguration(
                 input=self.subtitle,
                 type="fluid.paragraph-01-mx",
                 config=config,
-                width=textWidth,
+                width=subtitleTextWidth,
                 position=LEFT * percent_to_units(5, config)  + DOWN * 1.8,
                 alignment=LEFT
             )

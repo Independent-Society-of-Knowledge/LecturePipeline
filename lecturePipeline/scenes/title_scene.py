@@ -6,12 +6,12 @@ from lecturePipeline.scenes.title_scenes.left_compact import leftCompact
 from lecturePipeline.scenes.title_scenes.left_full import  leftFull
 from lecturePipeline.scenes.title_scenes.right_compact import rightCompact
 from lecturePipeline.scenes.title_scenes.right_full import rightFull
-
+from lecturePipeline.utils.confPath import CONFIGPATH
 
 
 class TitleScene(Scene):
     def __init__(self, configuration: LectureConfiguration = LectureConfiguration(
-        "/home/kid-a/Documents/isk/LecturePipeline/resources/testconf.yml"),
+        CONFIGPATH),
                  title: str = "Title of a lecture that is a long title indeed",
                  subtitle: str = "Subtitle of a lecture that is a long subtitle indeed",
                  placement: str = "right-full",

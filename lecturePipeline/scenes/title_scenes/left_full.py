@@ -1,10 +1,11 @@
 from lecturePipeline import LectureConfiguration
 from manim import *
 from lecturePipeline.typography.text import textHandler
+from lecturePipeline.utils.confPath import CONFIGPATH
 from lecturePipeline.utils.percent_to_units import percent_to_units
 from lecturePipeline.utils.time_manager import time_manager
 
-def leftFull(configuration: LectureConfiguration = LectureConfiguration("/home/kid-a/Documents/isk/LecturePipeline/resources/testconf.yml"),
+def leftFull(configuration: LectureConfiguration = LectureConfiguration(CONFIGPATH),
                 title: str = "Title",
                  subtitle: str = "Subtitle",
                  duration: float = 4
